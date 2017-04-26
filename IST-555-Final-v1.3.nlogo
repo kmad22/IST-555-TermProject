@@ -269,6 +269,7 @@ to pickup-litter
   if [litter-count] of patch-here > 0 [
     ;; Add the trash to the drone's storage.
     set storage-full true
+    set color 125
     ;; Mark the patch as no longer containing trash and
     ;; set its color back to black.
     ask patch-here [
@@ -285,6 +286,7 @@ end
 to dropoff-litter
   ;; Drop the litter off.
   set storage-full false
+ set color one-of base-colors 
   ;; Update the home-base patch's litter count.
   ask patch-here [
     set litter-count litter-count + 1
