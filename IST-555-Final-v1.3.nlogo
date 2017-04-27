@@ -640,24 +640,36 @@ litter-collected
 11
 
 @#$#@#$#@
-IST-555 SD4: Avoiding Pedestrian Collisions
+IST-555 Final Project: Team 4
 ===========================================
 
 ## WHAT IS IT?
-This is the final project of Team 4 for IST-555 Spring 2017.
-
+This is the final project of Team 4 for IST-555 Spring 2017. This model is a representation 
+of an autonomous drone cleaning a park for debris. Our system utilizes multiple turtles to
+represent people, drones, and other obstacles one would find in a park. We have the turtles
+that represent people and our drones move around the park randomly. The people will walk around
+the park dropping trash at random points. The people will also avoid other turtles that represent 
+campfires, trees, plants and other people. The drones will fly around the park looking for the trash 
+dropped. Trash dropped is represented by yellow patches. Once the drone finds a piece of trash it, takes
+it back to home base, which we placed at the center of our environment. This simulates the drone emptying 
+the trash that it has stored. Once the drone is empty of trash, it begins to fly around looking for more.
 
 ## HOW IT WORKS
 
 
 ## HOW TO USE IT
-
+Turtles and trash are placed at random in our environment upon clicking "Setup".
+The "Step" button is used to move turtles that wander 1 tick at a time. 
+The "Go" button allows the system to run continuously until there is no more trash.
+The number of drones deployed can be changed by the slider in the interface. 
+There is a slider to select how much litter is to scattered throughout the enviorment.
+There is a slider to select the number of obstacles for the turtles to avoid 
 
 ## THINGS TO NOTICE
 
 
 ## THINGS TO TRY
-
+Toggle the "draw-path" switch and watch for any diffrence in how the drones search for trash.
 
 ## EXTENDING THE MODEL
 There are several ways this model could be extended.
